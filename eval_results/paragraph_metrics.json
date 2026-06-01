@@ -1,0 +1,92 @@
+{
+  "model": "checkpoints/t5-small-paraphrase",
+  "device": "cpu",
+  "num_beams": 5,
+  "min_length_ratio": 0.8,
+  "local": [
+    {
+      "source_words": 258,
+      "paraphrase_words": 261,
+      "length_ratio": 1.0116279069767442,
+      "bleu_vs_source": 66.369986373795,
+      "rougeL_vs_source": 0.8441064638783269,
+      "bertscore_f1": 0.9537754654884338,
+      "passage_id": "cover_letter",
+      "domain": "career",
+      "latency_seconds": 1.4441475002095103,
+      "paraphrase": "A cover letter is a formal document that accompanies your resume when applying for a job. It serves as a starting point and provides additional context for your application. The primary purpose of a cover letter is to introduce yourself to the hiring manager and provide context for your resume, as explained in this section. It allows you to elaborate on your qualifications, abilities, and experiences in a way that your resume may not be fully recognizable. It's also a chance to express your enthusiasm for the role and company, and to explain why you would be a good fit. A typical cover letter includes the following sections: Header, which includes your contact information, the date, and the employer's contact information. A greeting to the hiring manager, which is preferably personalized with their name. In brief, introduces who you are and the position you are applying for. The body of your cover letter is where you discuss your qualifications, experiences, and skills that make you suitable for the job. You can also explain how you can contribute to the company. The conclusion is to summarise your points and reiterate your enthusiasm for the role. You can also include a call to action, such as asking for an interview. Your name is followed by a polite closing followed by your signature. The cover letter is often the first document that a hiring manager will read, resulting in the setting of your entire application's tone. It provides you with the opportunity to stand out among other applicants and make a strong first impression."
+    },
+    {
+      "source_words": 267,
+      "paraphrase_words": 278,
+      "length_ratio": 1.0411985018726593,
+      "bleu_vs_source": 66.34228841627831,
+      "rougeL_vs_source": 0.8209764918625677,
+      "bertscore_f1": 0.9674029350280762,
+      "passage_id": "legal_contract_breach",
+      "domain": "legal",
+      "latency_seconds": 1.1215750421397388,
+      "paraphrase": "A significant breach of contract occurs when a party fails to fulfill an obligation that goes to the essence of the agreement, thereby depriving the non-breaching party of the benefits it reasonably expected to receive. Under common law jurisdictions, the doctrine of substantial performance recognizes that minor deviations from contract terms do not necessarily entitle the other party to terminate the contract, as long as the essential objective of the agreement has been achieved. The aggrieved party may pursue several remedies, such as compensatory damages, specific performance, or rescission of the contract, if a breach is considered significant. Compensatory damages aim to place the non-breaching party in the position they would have occupied if the contract had been fully performed, and may include both direct losses and consequential damages that were reasonably foreseeable during contracting. Specific performance, which is an equitable remedy, is typically reserved for situations where monetary compensation would be inadequate, such as contracts that involve unique goods or real property. Due to the impractical nature of judicial supervision, the courts will generally not order specific performance for personal service contracts. The doctrine of mitigation requires the non-breaching party to take reasonable measures to minimize their losses, but failure to mitigate may result in a reduction in the recoverable damages. Liquidated damages clauses are frequently used by parties in commercial contexts to predetermine the amount of compensation payable upon breach, but these clauses must represent a genuine pre-estimate of loss and not constitute a penalty, as penalty clauses typically are unenforceable. The statutes of limitations impose time limits for a claim to be brought, and they vary depending on the jurisdiction and nature of the contract."
+    },
+    {
+      "source_words": 243,
+      "paraphrase_words": 244,
+      "length_ratio": 1.0041152263374487,
+      "bleu_vs_source": 65.69542390435056,
+      "rougeL_vs_source": 0.7652859960552268,
+      "bertscore_f1": 0.9646546244621277,
+      "passage_id": "medical_diabetes",
+      "domain": "medical",
+      "latency_seconds": 2.333472916856408,
+      "paraphrase": "Type 2 diabetes mellitus is a chronic metabolic disorder that is characterized by insulin resistance and progressive beta-cell dysfunction, leading to elevated blood glucose levels that can lead to a range of microvascular and macrovascular complications if controlled. The pathophysiology involves a complex interplay between genetic predisposition, lifestyle factors, and environmental influences, with obesity, physical inactivity, and dietary patterns being a significant contributor to the onset of disease. Lifestyle changes, such as dietary changes, increased physical activity, weight reduction, and smoking cessation, are typically emphasized during initial management, as these interventions can significantly enhance glycemic control and reduce cardiovascular risk. In the event that lifestyle measures fail to achieve target hemoglobin levels, pharmacological therapy becomes necessary. Metformin remains the first-line agent in most clinical guidelines due to its efficacy, favorable safety profile, and beneficial effects on cardiovascular outcomes. The addition of agents such as sulfonylureas, dipeptidyl peptidase-4 inhibitors, sodium-glucose cotransporter-2 inhibitors and glucagon-like peptide-1 receptor agonists can lead to treatment intensification for patients who lack metformin alone. The choice of additional therapy should be individualized based on patient-specific factors, such as comorbidities, the risk of hypoglycemia, weight considerations, and cost. Regular monitoring of glycated hemoglobin every three to six months is essential to evaluate treatment efficacy and guide therapeutic adjustments. Diabetic complications, such as retinopathy, nephropathy, and neuropathy, should be monitored periodically by patients. In order to achieve optimal long-term outcomes, patient education is crucial for self-monitoring blood glucose, hypoglycemia recognition, and medication regimens."
+    }
+  ],
+  "llm": {
+    "provider": "gemini",
+    "model": "gemini-2.5-flash",
+    "results": [
+      {
+        "source_words": 258,
+        "paraphrase_words": 279,
+        "length_ratio": 1.0813953488372092,
+        "bleu_vs_source": 23.54566121079522,
+        "rougeL_vs_source": 0.5027522935779817,
+        "bertscore_f1": 0.8969277143478394,
+        "passage_id": "cover_letter",
+        "domain": "career",
+        "latency_seconds": 13.405748125165701,
+        "paraphrase": "A cover letter is a formal written communication submitted alongside your resume when seeking employment. It functions as an initial introduction to your application and provides supplementary background information.\n\nThe primary objective of this document is to introduce the job seeker to the hiring manager and to offer a deeper understanding of their resume's contents. It provides an avenue to elaborate on specific qualifications, pertinent skills, and professional experiences that might not be fully articulated within the resume itself. Furthermore, it allows candidates to convey their genuine enthusiasm for the particular role and the company, and to articulate precisely why they are an ideal candidate.\n\nStructurally, a typical cover letter encompasses several key components:\nHeader: This section presents your personal contact information, the current date, and the prospective employer's contact details.\nSalutation: A courteous greeting directed to the hiring manager, ideally personalized by using their name.\nIntroduction: A concise opening that identifies the applicant and the specific position for which they are applying.\nBody: Forming the central part of the letter, this is where you discuss your qualifications, relevant experiences, and abilities that align with the job requirements. It's also an opportunity to highlight potential contributions to the organization.\nConclusion: This segment summarizes the main arguments, reaffirms interest in the role, and can incorporate a direct request for an interview or further discussion.\nSignature: A professional closing phrase followed by your typed or handwritten name.\n\nFrequently, the cover letter is the very first document an employer's representative will examine, thereby setting the overall tone for your entire candidacy. It presents a valuable opportunity to distinguish yourself from the pool of other applicants and to make a powerful initial impression.",
+        "llm_input_tokens": 355,
+        "llm_output_tokens": 335
+      },
+      {
+        "source_words": 267,
+        "paraphrase_words": 218,
+        "length_ratio": 0.8164794007490637,
+        "bleu_vs_source": 24.064058399210772,
+        "rougeL_vs_source": 0.5252525252525252,
+        "bertscore_f1": 0.8948260545730591,
+        "passage_id": "legal_contract_breach",
+        "domain": "legal",
+        "latency_seconds": 11.088769166730344,
+        "paraphrase": "A fundamental failure by one party to meet an essential contractual obligation, denying the other party the anticipated advantage, constitutes a material breach. In common law systems, the principle of substantial performance dictates that minor non-compliance doesn't automatically permit contract termination, provided the agreement's core purpose has been largely fulfilled. If a breach is deemed material, the injured party may pursue various remedies, including monetary compensation, forced performance, or contract cancellation. Compensatory damages aim to restore the non-breaching party to the state they would have been in if the contract had been fully executed, covering both immediate and reasonably foreseeable indirect losses. Specific performance, an equitable remedy, is typically reserved for instances where financial recompense is insufficient, such as agreements for unique property or goods, but is generally not granted for personal service contracts due to enforcement difficulties. The mitigation doctrine mandates that the non-breaching party undertake reasonable measures to lessen their losses; a failure to do so may reduce the damages they can recover. In business agreements, parties often incorporate liquidated damages clauses to set a predetermined amount of compensation for a breach, though these clauses must represent a true pre-estimate of loss and not an unenforceable penalty. Statutes of limitations impose deadlines for filing claims, which differ based on jurisdiction and the nature of the contract.",
+        "llm_input_tokens": 359,
+        "llm_output_tokens": 259
+      },
+      {
+        "source_words": 243,
+        "paraphrase_words": 260,
+        "length_ratio": 1.0699588477366255,
+        "bleu_vs_source": 8.753879337911231,
+        "rougeL_vs_source": 0.3778625954198473,
+        "bertscore_f1": 0.8733760118484497,
+        "passage_id": "medical_diabetes",
+        "domain": "medical",
+        "latency_seconds": 13.353429042268544,
+        "paraphrase": "Type 2 diabetes is a long-term metabolic condition marked by the body's diminished response to insulin and worsening pancreatic beta-cell function. This causes high blood sugar, which, without proper management, can cause various small and large blood vessel complications. Its development stems from a complex interaction of genetics, lifestyle choices, and environmental elements, with significant roles played by excess weight, lack of exercise, and eating habits in initiating the illness. Initial treatment usually focuses on changing one's lifestyle, such as modifying diet, increasing physical activity, losing weight, and quitting smoking, because these approaches significantly enhance blood sugar regulation and lower heart disease risk. If lifestyle changes alone don't bring glycated hemoglobin to target levels, medication is then required. Metformin is still the primary medication recommended by most clinical guidelines due to its effectiveness, good safety record, and positive impact on heart health. For individuals not reaching blood sugar goals solely with metformin, intensifying therapy might mean adding drugs like sulfonylureas, DPP-4 inhibitors, SGLT-2 inhibitors, GLP-1 receptor agonists, or insulin. Supplemental treatment selection should be tailored to each patient, considering their co-existing conditions, risk of low blood sugar, weight implications, and financial cost. Checking glycated hemoglobin regularly every 3 to 6 months is crucial for assessing how well treatment is working and making necessary adjustments. Patients also need routine checks for diabetes-related complications, such as eye damage (retinopathy), kidney disease (nephropathy), and nerve damage (neuropathy). Educating patients on checking their own blood sugar, identifying low blood sugar, and sticking to their prescribed medications is vital for achieving the best long-term results.",
+        "llm_input_tokens": 370,
+        "llm_output_tokens": 344
+      }
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+venv
+venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
+.claude/
+
+# Secrets
+.env
+
+# Generated artifacts
+data/
+checkpoints/*/checkpoint-*/
+# eval_results/ kept in the repo as evidence cited in REPORT.md
+
+# Editor / OS
+.idea/
+.vscode/
+
+# iCloud Drive conflict copies (macOS) — these silently break venv/installs
+*\ [0-9].py
+*\ [0-9].pyc
+*\ [0-9].so

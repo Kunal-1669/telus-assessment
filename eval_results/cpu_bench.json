@@ -1,0 +1,137 @@
+{
+  "input_file": "cover_letter.txt",
+  "input_words": 258,
+  "model": "checkpoints/t5-small-paraphrase",
+  "torch_threads": 4,
+  "target_ms": 800.0,
+  "repeats": 3,
+  "batch_size": 16,
+  "results": [
+    {
+      "config": "FP32 beam=5",
+      "quantized": false,
+      "num_beams": 5,
+      "batch_size": 16,
+      "input_words": 258,
+      "median_ms": 764.5258749835193,
+      "min_ms": 752.9668752104044,
+      "max_ms": 804.2557500302792,
+      "all_runs_ms": [
+        752.9668752104044,
+        764.5258749835193,
+        804.2557500302792
+      ],
+      "peak_rss_mb": 919.0625,
+      "throughput_words_per_sec": 337.4640524829348,
+      "length_ratio": 1.0116279069767442,
+      "paraphrase_words": 261,
+      "target_ms": 800.0,
+      "target_met": true
+    },
+    {
+      "config": "FP32 beam=2",
+      "quantized": false,
+      "num_beams": 2,
+      "batch_size": 16,
+      "input_words": 258,
+      "median_ms": 382.6384167186916,
+      "min_ms": 380.85195794701576,
+      "max_ms": 406.0759171843529,
+      "all_runs_ms": [
+        380.85195794701576,
+        406.0759171843529,
+        382.6384167186916
+      ],
+      "peak_rss_mb": 938.796875,
+      "throughput_words_per_sec": 674.2658048098622,
+      "length_ratio": 0.9689922480620154,
+      "paraphrase_words": 250,
+      "target_ms": 800.0,
+      "target_met": true
+    },
+    {
+      "config": "FP32 greedy",
+      "quantized": false,
+      "num_beams": 1,
+      "batch_size": 16,
+      "input_words": 258,
+      "median_ms": 275.1557077281177,
+      "min_ms": 273.6312919296324,
+      "max_ms": 280.5257081054151,
+      "all_runs_ms": [
+        280.5257081054151,
+        273.6312919296324,
+        275.1557077281177
+      ],
+      "peak_rss_mb": 961.421875,
+      "throughput_words_per_sec": 937.6509109341489,
+      "length_ratio": 0.9496124031007752,
+      "paraphrase_words": 245,
+      "target_ms": 800.0,
+      "target_met": true
+    },
+    {
+      "config": "INT8 beam=5",
+      "quantized": true,
+      "num_beams": 5,
+      "batch_size": 16,
+      "input_words": 258,
+      "median_ms": 1210.1689158007503,
+      "min_ms": 1179.2085841298103,
+      "max_ms": 1214.839834254235,
+      "all_runs_ms": [
+        1214.839834254235,
+        1179.2085841298103,
+        1210.1689158007503
+      ],
+      "peak_rss_mb": 1289.140625,
+      "throughput_words_per_sec": 213.1933787353027,
+      "length_ratio": 1.0271317829457365,
+      "paraphrase_words": 265,
+      "target_ms": 800.0,
+      "target_met": false
+    },
+    {
+      "config": "INT8 beam=2",
+      "quantized": true,
+      "num_beams": 2,
+      "batch_size": 16,
+      "input_words": 258,
+      "median_ms": 613.1151667796075,
+      "min_ms": 576.9114578142762,
+      "max_ms": 653.5773328505456,
+      "all_runs_ms": [
+        613.1151667796075,
+        653.5773328505456,
+        576.9114578142762
+      ],
+      "peak_rss_mb": 1179.1875,
+      "throughput_words_per_sec": 420.8018558000239,
+      "length_ratio": 1.0077519379844961,
+      "paraphrase_words": 260,
+      "target_ms": 800.0,
+      "target_met": true
+    },
+    {
+      "config": "INT8 greedy",
+      "quantized": true,
+      "num_beams": 1,
+      "batch_size": 16,
+      "input_words": 258,
+      "median_ms": 296.50083277374506,
+      "min_ms": 295.7553332671523,
+      "max_ms": 305.88204227387905,
+      "all_runs_ms": [
+        305.88204227387905,
+        295.7553332671523,
+        296.50083277374506
+      ],
+      "peak_rss_mb": 1121.0,
+      "throughput_words_per_sec": 870.1493266862949,
+      "length_ratio": 0.9689922480620154,
+      "paraphrase_words": 250,
+      "target_ms": 800.0,
+      "target_met": true
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "model": "checkpoints/t5-small-paraphrase",
+  "model_type": "t5",
+  "split": "validation",
+  "num_samples": 300,
+  "num_beams": 4,
+  "bleu": 29.70540254220238,
+  "rouge1": 0.5896597112024723,
+  "rouge2": 0.34318450849550025,
+  "rougeL": 0.5050418890978197,
+  "generation_seconds": 26.706321750301868,
+  "examples_per_second": 11.233295352498665
+}

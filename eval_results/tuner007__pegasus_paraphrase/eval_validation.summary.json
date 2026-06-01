@@ -1,0 +1,13 @@
+{
+  "model": "tuner007/pegasus_paraphrase",
+  "model_type": "pegasus",
+  "split": "validation",
+  "num_samples": 300,
+  "num_beams": 4,
+  "bleu": 17.7827738218534,
+  "rouge1": 0.5000922326264474,
+  "rouge2": 0.2661934440771846,
+  "rougeL": 0.42370192497904696,
+  "generation_seconds": 54.70829495880753,
+  "examples_per_second": 5.483629132033529
+}
